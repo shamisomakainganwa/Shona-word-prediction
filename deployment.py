@@ -1,7 +1,7 @@
+#importing and loading  all the libraries used in this assignment
 import os
 import streamlit as st
 import pickle
-#importing and loading  all the libraries used in this assignment
 import numpy as np
 import tensorflow as tf
 from tensorflow.keras.preprocessing.text import Tokenizer
@@ -17,9 +17,9 @@ from keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 # Load the previously saved model
-model = load_model('best_performing_model2.h5')
+model = load_model('best_performing_model2.h1')
 
-st.title('Next Word Prediction in Shona')
+st.title('Shona next word prediction')
 #st.button("https://colab.research.google.com/drive/1Sx_u6sVqASlGJml1hQZTC88Pc-e33Y6D?usp=sharing")
 
 link = '[Link to colab notebook](https://colab.research.google.com/drive/1Sx_u6sVqASlGJml1hQZTC88Pc-e33Y6D?usp=sharing)
@@ -72,7 +72,7 @@ def main():
             st.success(result)
 
         else:
-            st.write("Please enter five words")
+            st.write("Enter five words")
 
 if __name__ == '__main__':
     main()
