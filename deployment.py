@@ -17,7 +17,7 @@ from keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 # Load the previously saved model
-model = load_model('best_performing_model2.h1')
+model1 = load_model('best_performing_model2.h1')
 
 st.title('Shona next word prediction')
 #st.button("https://colab.research.google.com/drive/1Sx_u6sVqASlGJml1hQZTC88Pc-e33Y6D?usp=sharing")
